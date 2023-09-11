@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # TODO: We'll start with static routes but move to RESTful routes soon
+  scope controller: :static do
+    get :about
+    get :projects
+    get :reviews
+    get :blog
+    get :contact
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root "static#home", as: :home
 end
