@@ -39,15 +39,11 @@
     -->
 
     <!-- Sitewide Stylesheets and Scripts -->
-    <link rel="stylesheet" href="/assets/css/root.css">
-    <link rel="stylesheet" href="/assets/css/dark.css">
+    <%= stylesheet_link_tag "theme_1", "data-turbo-track": "reload" %>
     <script defer src="/assets/js/nav.js"></script>
     <script defer src="/assets/js/dark.js"></script>
 
     <!-- {% block head %}{% endblock %} -->
-    <% if content_for? :for_head %>
-      <%= yield :for_head %>
-    <% end %>
 
     <!--For home page, use service keywords for the title, including location for SEO.
         Other pages should just include the page name.
