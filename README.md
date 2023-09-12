@@ -3,6 +3,12 @@
 Get a simple and fast local business website that updates itself
 with SEO-optimized content.
 
+## Project Status
+
+Kicksplash Sites is in the early stages of development. We're building the first version of the product and talking to potential customers.
+
+[See the current app in production](https://salty-wildwood-50450-0a6f756ece41.herokuapp.com/)
+
 ## The Problem
 
 Local businesses like residential contractors don't need much in terms of online marketing, and there are a ton of free and low-cost options for building and
