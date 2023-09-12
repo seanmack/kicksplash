@@ -93,8 +93,6 @@ GEM
     erubi (1.12.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    heroku-deflater (0.6.3)
-      rack (>= 1.4.5)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.2.1)
@@ -288,7 +286,6 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  heroku-deflater
   importmap-rails
   jbuilder
   pg (~> 1.1)
