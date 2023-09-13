@@ -1,0 +1,85 @@
+<% content_for :preload_image_path, asset_path("/assets/images/landing.jpg") %>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero">
+    <div class="cs-container">
+        <div class="cs-flex-group">
+            <span class="cs-topper">mountain hiking society</span>
+            <h1 class="cs-title">Explore the World with Exciting People</h1>
+            <p class="cs-text">
+                Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
+            </p>
+            <a href="/about" class="cs-button-solid">Explore More</a>
+            <a href="/contact" class="cs-button-transparent">
+                <img
+                class="cs-img"
+                loading="lazy"
+                decoding="async"
+                src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                alt="play icon"
+                width="17"
+                height="17" />
+                Get in Touch
+            </a>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+    </picture>
+</section>
+
+<!-- TODO: Should the Services section really be distinct from the above? -->
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="card">
+        <picture>
+            <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/svgs/service1.svg"
+            alt="appliance"
+            width="48"
+            height="48" />
+        </picture>
+        <h2>Service 1</h2>
+        <p>From static index view. Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+    </div>
+    <div class="card">
+        <picture>
+            <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/svgs/service2.svg"
+            alt="appliance"
+            width="48"
+            height="48" />
+        </picture>
+        <h2>Service 2</h2>
+        <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+    </div>
+    <div class="card">
+        <picture>
+            <img
+            aria-hidden="true"
+            decoding="async"
+            src="/assets/svgs/service3.svg"
+            alt="appliance"
+            width="48"
+            height="48" />
+        </picture>
+        <h2>Service 3</h2>
+        <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
+    </div>
+</section>

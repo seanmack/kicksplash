@@ -137,7 +137,8 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
-  body.dark-mode #sbs .cs-left:before, body.dark-mode #sbs .cs-left:after {
+  body.dark-mode #sbs .cs-left:before,
+  body.dark-mode #sbs .cs-left:after {
     background: var(--accent);
   }
   body.dark-mode #sbs .cs-picture2 {
