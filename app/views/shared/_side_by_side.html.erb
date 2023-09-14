@@ -7,10 +7,14 @@
         <!-- Left Image Section -->
         <div class="cs-left">
             <picture class="cs-picture cs-picture1">
-                <%= image_tag 'cabinets2.jpg', alt: 'cabinets', loading: 'lazy', decoding: 'async', width: 400, height: 563, srcset: { 'cabinets2-m.jpg': '(max-width: 600px)', 'cabinets2.jpg': '(min-width: 601px)' } %>
+                <%= tag.source media: '(max-width: 600px)', srcset: asset_path("cabinets2-m.jpg") %>
+                <%= tag.source media: '(min-width: 601px)', srcset: asset_path("cabinets2.jpg") %>
+                <%= image_tag "cabinets2.jpg", aria: { hidden: "true" }, decoding: "async", alt: "cabinets", loading: "lazy", width: 400, height: 563 %>
             </picture>
             <picture class="cs-picture cs-picture2">
-                <%= image_tag 'construction.jpg', alt: 'house', loading: 'lazy', decoding: 'async', width: 400, height: 563, srcset: { 'construction-m.jpg': '(max-width: 600px)', 'construction.jpg': '(min-width: 601px)' } %>
+                <%= tag.source media: '(max-width: 600px)', srcset: asset_path("construction-m.jpg") %>
+                <%= tag.source media: '(min-width: 601px)', srcset: asset_path("construction.jpg") %>
+                <%= image_tag "construction.jpg", aria: { hidden: "true" }, decoding: "async", alt: "house", loading: "lazy", width: 400, height: 563 %>
             </picture>
         </div>
         <!-- Right Content Section-->
