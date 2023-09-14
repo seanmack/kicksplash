@@ -10,8 +10,5 @@ module Kicksplash
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-
-    # Temporary workaround to avoid changing URLs within existing static files
-    config.assets.prefix = "/temp_assets_directory"
   end
 end
