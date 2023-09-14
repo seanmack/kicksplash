@@ -33,8 +33,9 @@
       <%= tag :link, rel: 'preload', as: 'image', href: yield(:preload_image_path) %>
     <% end %>
 
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <%= preload_link_tag asset_path("roboto-v29-latin-regular.woff2"), type: "font/woff2", crossorigin: "anonymous", as: "font" %>
+    <%= preload_link_tag asset_path("roboto-v29-latin-700.woff2"), type: "font/woff2", crossorigin: "anonymous", as: "font" %>
 
     <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors
     {% if preloadImg != '' %}
