@@ -25,9 +25,7 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
-# Temporary workaround to avoid changing URLs within existing static files
-# /public/assets
-/public/temp_assets_directory
+/public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
