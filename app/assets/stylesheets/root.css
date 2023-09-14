@@ -894,7 +894,7 @@
     display: block;
     height: 69.25rem;
     width: 125rem;
-    background: url('/assets/svgs/cta-squares.svg');
+    background: url('<%= asset_path 'svgs/cta-squares.svg' %>');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

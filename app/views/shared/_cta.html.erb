@@ -15,9 +15,9 @@
         <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
     </div>
     <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
+        <%= tag.source(srcset: asset_path("cabinets2-m.jpg"), media: "(max-width: 600px)") %>
+        <%= tag.source(srcset: asset_path("cabinets2.jpg"), media: "(min-width: 601px)") %>
+        <%= image_tag "cabinets2.jpg", alt: "kitchen cabinets", width: 2500, height: 1667, loading: "lazy", decoding: "async", aria_hidden: true %>
     </picture>
 
 </section>
