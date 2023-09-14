@@ -61,8 +61,8 @@
 
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
+                    <%= tag.source(srcset: asset_path("skyscraper.jpg"), media: "(min-width: 601px)") %>
+                    <%= image_tag "skyscraper.jpg", alt: "building", width: 2500, height: 1667, loading: "lazy", decoding: "async", aria_hidden: true %>
                 </picture>
 
             </div>

@@ -1,4 +1,4 @@
-<% content_for :preload_image_path, asset_path("/assets/images/cabinets2.jpg") %>
+<% content_for :preload_image_path, asset_path("cabinets2.jpg") %>
 
 <!-- ============================================ -->
 <!--                    LANDING                   -->
@@ -7,8 +7,8 @@
 <section id="int-hero">
     <h1 id="home-h"><%= title %></h1>
     <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        <%= tag.source(srcset: asset_path("cabinets2-m.jpg"), media: "(max-width: 600px)") %>
+        <%= tag.source(srcset: asset_path("cabinets2.jpg"), media: "(min-width: 601px)") %>
+        <%= image_tag "cabinets2.jpg", alt: "kitchen cabinets", width: 2500, height: 1667, loading: "eager", decoding: "async", aria_hidden: true %>
     </picture>
 </section>

@@ -1,4 +1,4 @@
-<% content_for :preload_image_path, asset_path("/assets/images/landing.jpg") %>
+<% content_for :preload_image_path, asset_path("landing.jpg") %>
 
 <!-- ============================================ -->
 <!--                    Hero                      -->
@@ -14,14 +14,7 @@
             </p>
             <a href="/about" class="cs-button-solid">Explore More</a>
             <a href="/contact" class="cs-button-transparent">
-                <img
-                class="cs-img"
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                alt="play icon"
-                width="17"
-                height="17" />
+                <%= image_tag "svgs/play.svg", class: "cs-img", loading: "lazy", decoding: "async", alt: "play icon", width: 17, height: 17 %>
                 Get in Touch
             </a>
         </div>
@@ -29,9 +22,9 @@
 
     <!-- Background Image -->
     <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        <%= tag.source(srcset: asset_path("landing-m.webp"), media: "(max-width: 600px)", type: "image/webp") %>
+        <%= tag.source(srcset: asset_path("landing.jpg"), media: "(min-width: 601px)") %>
+        <%= image_tag "landing.jpg", alt: "new home", width: 2500, height: 1667, loading: "eager", decoding: "async", aria_hidden: true %>
     </picture>
 </section>
 
@@ -45,39 +38,21 @@
     <!-- Get Icons From flaticon.com -->
     <div class="card">
         <picture>
-            <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/svgs/service1.svg"
-            alt="appliance"
-            width="48"
-            height="48" />
+            <%= image_tag "svgs/service1.svg", alt: "appliance", width: 48, height: 48, loading: "lazy", decoding: "async", aria_hidden: true %>
         </picture>
         <h2>Service 1</h2>
         <p>From static index view. Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
     </div>
     <div class="card">
         <picture>
-            <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/svgs/service2.svg"
-            alt="appliance"
-            width="48"
-            height="48" />
+            <%= image_tag "svgs/service2.svg", alt: "appliance", width: 48, height: 48, loading: "lazy", decoding: "async", aria_hidden: true %>
         </picture>
         <h2>Service 2</h2>
         <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
     </div>
     <div class="card">
         <picture>
-            <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/svgs/service3.svg"
-            alt="appliance"
-            width="48"
-            height="48" />
+            <%= image_tag "svgs/service3.svg", alt: "appliance", width: 48, height: 48, loading: "lazy", decoding: "async", aria_hidden: true %>
         </picture>
         <h2>Service 3</h2>
         <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>

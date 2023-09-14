@@ -7,14 +7,10 @@
         <!-- Left Image Section -->
         <div class="cs-left">
             <picture class="cs-picture cs-picture1">
-                <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                <%= image_tag 'cabinets2.jpg', alt: 'cabinets', loading: 'lazy', decoding: 'async', width: 400, height: 563, srcset: { 'cabinets2-m.jpg': '(max-width: 600px)', 'cabinets2.jpg': '(min-width: 601px)' } %>
             </picture>
             <picture class="cs-picture cs-picture2">
-                <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                <%= image_tag 'construction.jpg', alt: 'house', loading: 'lazy', decoding: 'async', width: 400, height: 563, srcset: { 'construction-m.jpg': '(max-width: 600px)', 'construction.jpg': '(min-width: 601px)' } %>
             </picture>
         </div>
         <!-- Right Content Section-->
@@ -33,7 +29,7 @@
                 </p>
                 <span class="cs-name">Justin Time</span>
                 <span class="cs-job">CEO-Founder</span>
-                <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+                <%= image_tag 'svgs/quote-white.svg', alt: 'gavel', loading: 'lazy', decoding: 'async', width: 136, height: 77, class: 'cs-quote-icon' %>
             </div>
             <a href="/projects" class="cs-button-solid"><%= cta_button_text %></a>
         </div>

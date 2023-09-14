@@ -13,15 +13,7 @@
         <ul class="cs-card-group">
             <!-- Review 1 -->
             <li class="cs-item">
-                <img
-                class="cs-item-img"
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                alt="profile picture"
-                width="80"
-                height="80" />
+                <%= image_tag "profile5.png", class: "cs-item-img", loading: "lazy", decoding: "async", alt: "profile picture", width: 80, height: 80, aria_hidden: true %>
                 <p class="cs-item-p">
                     Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
                 </p>
@@ -29,27 +21,10 @@
                     Jon Doe
                     <span class="cs-desc">Homeowner</span>
                 </span>
-                <img
-                class="cs-item-stars"
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                alt="stars"
-                width="96"
-                height="16" />
-            </li>
+                <%= image_tag "svgs/stars-yellow.svg", class: "cs-item-stars", loading: "lazy", decoding: "async", alt: "stars", width: 96, height: 16, aria_hidden: true %>            </li>
             <!-- Review 2 -->
             <li class="cs-item">
-                <img
-                class="cs-item-img"
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                alt="profile picture"
-                width="80"
-                height="80" />
+                 <%= image_tag "profile-4.png", class: "cs-item-img", loading: "lazy", decoding: "async", alt: "profile picture", width: 80, height: 80, aria_hidden: true %>
                 <p class="cs-item-p">
                     Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
                 </p>
@@ -57,15 +32,7 @@
                     Jane Doe
                     <span class="cs-desc">Homeowner</span>
                 </span>
-                <img
-                class="cs-item-stars"
-                aria-hidden="true"
-                loading="lazy"
-                decoding="async"
-                src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                alt="stars"
-                width="96"
-                height="16" />
+                <%= image_tag "svgs/stars-yellow.svg", class: "cs-item-stars", loading: "lazy", decoding: "async", alt: "stars", width: 96, height: 16, aria_hidden: true %>            </li>
             </li>
         </ul>
         <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>

@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Preloads -->
-    <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+    <%= preload_link_tag 'svgs/logo-white.svg', as: 'image' %>
     <% if content_for?(:preload_image_path) %>
       <%= tag :link, rel: 'preload', as: 'image', href: yield(:preload_image_path) %>
     <% end %>
@@ -79,13 +79,11 @@
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
-    <!-- {% include "components/header.html" %} -->
-    <%= render partial: "header" %>
+    <%= render partial: "shared/header" %>
     <main id="main">
       <!-- {% block body %}{% endblock %} -->
       <%= yield %>
     </main>
-    <!-- {% include "components/footer.html" %} -->
-    <%= render partial: "footer" %>
+    <%= render partial: "shared/footer" %>
   </body>
 </html>
