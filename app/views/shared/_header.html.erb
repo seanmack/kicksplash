@@ -1,5 +1,4 @@
-
-    <!-- ============================================ -->
+<!-- ============================================ -->
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
@@ -110,10 +109,6 @@
             </div>
         </nav>
         <a href="/contact" class="cs-button-solid cs-nav-button">Contact Us</a>
-        <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-        <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <%= image_tag 'svgs/moon.svg', class: 'cs-moon', width: 480, height: 480 %>
-            <%= image_tag "svgs/sun.svg", class: 'cs-sun', alt: 'sun', width: 15, height: 15, decoding: 'async', aria_hidden: true %>
-        </button>
+        <%= render partial: "shared/dark_mode_toggle" %>
     </div>
 </header>
